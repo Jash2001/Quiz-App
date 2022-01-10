@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+        <li><a id=leaderboard onclick="scoreList()">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a></li>
+        <li style="float:right" class="time">Time:</li>
+    </ul>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="container">
+               <h2> Coding Quiz Challenge </h2> 
+               <p>Try to answer the following code-related questions within the time limit.<p>
+               <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!<p> 
+               <button class="btn" id="start">Start Quiz </button>
+            </div>
+        
+            <div id="questions" >
+                <div class="question-block"></div>
+            <div class="options" id="choice-option">
+                <button class="choices" id="o1" onclick="ansCheck('1')"> option 1 </button>
+                <button class="choices" id="o2" onclick="ansCheck('2')"> option 2 </button>
+                <button class="choices" id="o3" onclick="ansCheck('3')"> option 3 </button>
+                <button class="choices" id="o4" onclick="ansCheck('4')"> option 4 </button>
+            </div>
+
+            <div id="answer"></div>
+            </div>
+
+            <div id="details">
+               
+            </div>
+        
+        </div>
+        
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
